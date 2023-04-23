@@ -19,23 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"fx-studiohub.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Bamboo">
-<meta property="og:url" content="https://fx-studiohub.github.io/archives/2023/04/index.html">
+    <meta name="description" content="本篇文章记录如何搭建基于giuhub的免费的属于自己的图床应用，可以插入到博客中，让文章更具多样性。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建github图床">
+<meta property="og:url" content="https://fx-studiohub.github.io/posts/1009949864.html">
 <meta property="og:site_name" content="Bamboo">
+<meta property="og:description" content="本篇文章记录如何搭建基于giuhub的免费的属于自己的图床应用，可以插入到博客中，让文章更具多样性。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-04-23T07:07:33.000Z">
+<meta property="article:modified_time" content="2023-04-23T07:42:03.435Z">
 <meta property="article:author" content="竹子の小窝">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://fx-studiohub.github.io/archives/2023/04/">
+<link rel="canonical" href="https://fx-studiohub.github.io/posts/1009949864.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2023/04/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://fx-studiohub.github.io/posts/1009949864.html","path":"posts/1009949864.html","title":"搭建github图床"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>归档 | Bamboo</title>
+<title>搭建github图床 | Bamboo</title>
   
 
 
@@ -68,7 +72,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Bamboo</h1>
+      <p class="site-title">Bamboo</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -94,7 +98,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -107,6 +111,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7"><span class="nav-number">1.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -148,150 +153,112 @@
 
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 6 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fx-studiohub.github.io/posts/1009949864.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="竹子の小窝">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bamboo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="搭建github图床 | Bamboo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          搭建github图床
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
+
+      <time title="创建时间：2023-04-23 15:07:33 / 修改时间：15:42:03" itemprop="dateCreated datePublished" datetime="2023-04-23T15:07:33+08:00">2023-04-23</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    <a title="搭建github图床" href="/posts/1009949864.html#SOHUCS" itemprop="discussionUrl">
+      <span id="sourceId::d4cda1b29065470eb5c1563cd217c876" class="cy_cmt_count" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>本篇文章记录如何搭建基于giuhub的免费的属于自己的图床应用，可以插入到博客中，让文章更具多样性。</p>
+<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><ul>
+<li>一个github账号</li>
+<li>Picgo，一个可以将本地图片上传到guthub的软件。</li>
+</ul>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-04-23T15:41:58+08:00"
-              content="2023-04-23">
-          04-23
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/posts/3932679840.html" itemprop="url">
-            <span itemprop="name">搭建基于koa框架的后端Web应用</span>
-          </a>
-      </div>
+    <footer class="post-footer">
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/2939297287.html" rel="prev" title="小工具合集">
+                  <i class="fa fa-chevron-left"></i> 小工具合集
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/3932679840.html" rel="next" title="搭建基于koa框架的后端Web应用">
+                  搭建基于koa框架的后端Web应用 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-04-23T15:07:33+08:00"
-              content="2023-04-23">
-          04-23
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/posts/1009949864.html" itemprop="url">
-            <span itemprop="name">搭建github图床</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-04-21T22:32:35+08:00"
-              content="2023-04-21">
-          04-21
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/posts/2939297287.html" itemprop="url">
-            <span itemprop="name">小工具合集</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-04-20T21:59:55+08:00"
-              content="2023-04-20">
-          04-20
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/posts/4192188526.html" itemprop="url">
-            <span itemprop="name">淘宝运营记录一</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-04-09T21:16:12+08:00"
-              content="2023-04-09">
-          04-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/posts/3606750375.html" itemprop="url">
-            <span itemprop="name">first post</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-04-09T20:46:11+08:00"
-              content="2023-04-09">
-          04-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/posts/1243066710.html" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
 
+
+
+
+    <div class="comments" id="SOHUCS" sid="d4cda1b29065470eb5c1563cd217c876"></div>
 </div>
   </main>
 
